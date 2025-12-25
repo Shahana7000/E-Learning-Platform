@@ -1,7 +1,7 @@
 import Topic from "../models/topic.model.js";
 
 // CREATE
-export const createTopic = async (req, res) => {
+ export const createTopic = async (req, res) => {
   const topic = await Topic.create(req.body);
   res.status(201).json(topic);
 };
