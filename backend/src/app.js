@@ -5,6 +5,9 @@ import adminRoutes from "./routes/admin.routes.js";
 import courseRoutes from "./routes/course.routes.js";
 import topicRoutes from "./routes/topic.routes.js";
 import materialRoutes from "./routes/material.routes.js";
+import publicRoutes from "./routes/public.routes.js";
+
+
 
 
 
@@ -16,6 +19,7 @@ app.use("/api/admin", adminRoutes);
 app.use("/api/courses", courseRoutes);
 app.use("/api/topics", topicRoutes);
 app.use("/api/materials", materialRoutes);
+app.use("/api/public", publicRoutes);
 
 
 
